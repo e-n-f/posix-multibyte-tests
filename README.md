@@ -7,11 +7,6 @@ awk
 Field separator is an extended regular expression, which is defined
 on characters, not bytes.
 
-bc
---
-
-Defines `LETTER` specifically as lower case `a` through `z`.
-
 comm
 ----
 
