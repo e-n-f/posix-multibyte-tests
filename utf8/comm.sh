@@ -16,7 +16,7 @@ sort > tmp/names
 awk '(NR % 3 == 0 || NR % 3 == 1)' tmp/names > tmp/names1
 awk '(NR % 3 == 1 || NR % 3 == 2)' tmp/names > tmp/names2
 
-comm tmp/names1 tmp/names2 > out/names.check
+comm tmp/names1 tmp/names2 > out/comm1.check
 
 awk '{
 	if (NR % 3 == 1) {
@@ -26,6 +26,6 @@ awk '{
 		printf("\t");
 	}
 	print;
-}' tmp/names > out/names
+}' tmp/names > out/comm1
 
-./compare comm "Comm agrees with sort"
+./compare comm1 "Comm agrees with sort"
