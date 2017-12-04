@@ -12,3 +12,14 @@ join tmp/join1 tmp/join2 > out/join1.check
 sort fixtures/join2a > out/join1
 
 ./compare join1 "Sort and join agree"
+
+# Sort using spaces as the delimiter,
+# since sort -t is broken
+
+cat fixtures/join1 | sed 's/^ *//' | sort -k1 | tr ' ' '💩' > tmp/join3
+cat fixtures/join2 | sed 's/^ *//' | sort -k1 | tr ' ' '💩' > tmp/join4
+
+join -t '💩' tmp/join3 tmp/join4 | sort > out/join2.check
+sort fixtures/join4a > out/join2
+
+./compare join1 "Join field separator"
