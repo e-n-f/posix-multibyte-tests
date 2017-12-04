@@ -22,4 +22,4 @@ cat fixtures/join2 | sed 's/^ *//' | sort -k1 | tr ' ' '💩' > tmp/join4
 join -t '💩' tmp/join3 tmp/join4 | sort > out/join2.check
 sort fixtures/join4a > out/join2
 
-./compare join1 "Join field separator"
+./compare join2 "Join field separator"
