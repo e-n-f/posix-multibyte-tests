@@ -1,6 +1,9 @@
 posix-multibyte-tests
 =====================
 
+POSIX P1003.2
+=============
+
 awk
 ---
 
@@ -107,6 +110,9 @@ wc
 --
 
 * `-m` counts characters
+
+POSIX P1003.2a (User Portability Extension)
+===========================================
 
 ex
 --
