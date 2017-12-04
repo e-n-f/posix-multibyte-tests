@@ -57,11 +57,6 @@ Writes filenames in collating sequence order
 * `-q` transforms unprintable characters
 * `-r` reverses collation
 
-mailx
------
-
-* `escape=` sets the tilde escape character
-
 paste
 -----
 
@@ -128,11 +123,6 @@ expand
 
 Counts characters for tab expansion
 
-more
-----
-
-Backspacing for underlining and bold works on characters (but only when output is a terminal anyway)
-
 strings
 -------
 
@@ -142,8 +132,3 @@ unexpand
 --------
 
 Counts characters; looks for locale blanks
-
-vi
---
-
-Don't know how to test this
