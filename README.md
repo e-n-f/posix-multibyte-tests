@@ -32,11 +32,6 @@ diff
 
 * `-b` ignores end of line whitespace, which is locale-defined
 
-ed
---
-
-Marks are a letter from the portable character set
-
 fold
 ----
 
