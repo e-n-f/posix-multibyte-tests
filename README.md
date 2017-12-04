@@ -7,6 +7,10 @@ awk
 Field separator is an extended regular expression, which is defined
 on characters, not bytes.
 
+`length`, `index`, and `substr` count characters.
+
+`tolower` and `toupper` transform strings according to the locale.
+
 comm
 ----
 
