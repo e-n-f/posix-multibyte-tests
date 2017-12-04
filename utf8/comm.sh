@@ -28,4 +28,4 @@ awk '{
 	print;
 }' tmp/names > out/names
 
-./compare names "Comm agrees with sort"
+./compare comm "Comm agrees with sort"
