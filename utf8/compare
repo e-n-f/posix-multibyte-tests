@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if cmp "out/$1.check" "out/$1"
+if cmp -s "out/$1.check" "out/$1"
 then
 	echo $1 ok
 else
