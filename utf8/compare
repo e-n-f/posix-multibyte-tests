@@ -2,7 +2,7 @@
 
 if cmp -s "out/$1.check" "out/$1"
 then
-	echo $1 ok
+	echo "ok  " "$1" "$2"
 else
-	echo $1 fail
+	echo "fail" "$1" "$2"
 fi
