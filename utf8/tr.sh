@@ -12,3 +12,8 @@ cat fixtures/dd1 |
 tr '\303\207\303\240\303\247' '360\235\220\202\360\235\220\232\360\235\220\234' > out/tr2.check
 
 ./compare tr2 "Multibyte backslash representation"
+
+cat fixtures/dd1 |
+tr '\303\207\303\240\303\247' 'Cac' > out/tr3.check
+
+./compare tr3 "Multibyte backslash representation just on LHS"
