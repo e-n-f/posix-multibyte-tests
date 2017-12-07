@@ -16,8 +16,8 @@ sort fixtures/join2a > out/join1
 # Sort using spaces as the delimiter,
 # since sort -t is broken
 
-cat fixtures/join1 | sed 's/^ *//' | sort -k1 | tr ' ' '💩' > tmp/join3
-cat fixtures/join2 | sed 's/^ *//' | sort -k1 | tr ' ' '💩' > tmp/join4
+cat fixtures/join1 | sed 's/^ *//' | sort -k1 | sed 's/ /💩/g' > tmp/join3
+cat fixtures/join2 | sed 's/^ *//' | sort -k1 | sed 's/ /💩/g' > tmp/join4
 
 join -t '💩' tmp/join3 tmp/join4 | sort > out/join2.check
 sort fixtures/join4a > out/join2
