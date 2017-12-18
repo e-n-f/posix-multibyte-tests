@@ -17,3 +17,13 @@ cat fixtures/dd1 |
 tr '\303\207\303\240\303\247' 'Cac' > out/tr3.check
 
 ./compare tr3 "Multibyte backslash representation just on LHS"
+
+cat fixtures/dd1 |
+tr '[:lower:]' '[:upper:]' > out/tr4.check
+
+./compare tr4 "Lower to upper with character classes"
+
+cat fixtures/tr5 |
+tr '[:lower:]' '[:upper:]' > out/tr5.check
+
+./compare tr5 "Lower to upper in Cyrillic"
